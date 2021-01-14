@@ -1,2 +1,1 @@
-# hello-world
-Testing GitHub Pages
+# Code Jr Trainee Frontend
