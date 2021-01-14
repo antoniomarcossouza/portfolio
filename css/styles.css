@@ -1,0 +1,345 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #262626;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navigation {
+  background-color: #191919;
+  color: #c3c3c3;
+  height: 50px;
+
+  animation-name: navbar;
+  animation-duration: 1.25s;
+}
+
+.navigation ul {
+  margin-top: 0;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  height: 50px;
+}
+
+.navigation li {
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #c3c3c3;
+}
+
+.navigation a:hover {
+  color: #d11808;
+}
+
+.navigation li.menu-hamburguer {
+  display: none;
+}
+
+.navigation li.menu-hamburguer:hover {
+  color: #d11808;
+  cursor: pointer;
+}
+
+.me {
+  color: white;
+}
+
+.me span {
+  color: #d11808;
+  display: block;
+}
+
+.me div {
+  display: inline-block;
+  width: 650px;
+}
+
+.profile-pic {
+  width: 40%;
+  text-align: center;
+
+  animation-name: profile-capa;
+  animation-duration: 1s;
+}
+
+.profile-pic img {
+  width: 350px;
+  border-radius: 350%;
+  margin-top: 200px;
+}
+
+.profile-title {
+  width: 59%;
+  vertical-align: top;
+
+  animation-name: title-capa;
+  animation-duration: 1s;
+}
+
+.profile-title h1 {
+  font-size: 58px;
+  margin-top: 250px;
+  line-height: 58px;
+}
+
+.profile-title h2 {
+  margin-top: -25px;
+  font-size: 16px;
+  color: #c3c3c3;
+  font-weight: 300;
+}
+
+.main {
+    padding: 80px 180px 80px 100px;
+
+    animation-name: corpo;
+    animation-duration: 1s;
+}
+
+.main .cv-pic {
+    float: left;
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.main h1 {
+  color: #c3c3c3;
+  font-weight: normal;
+}
+
+.main h2 {
+  color: #c3c3c3;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 40px;
+}
+
+.main h3 {
+  color: #d11808;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.main p {
+  color: #c3c3c3;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.breadcrumbs {
+  list-style: none;
+  padding-left: 0;
+  color: #c3c3c3;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+}
+
+.breadcrumbs a {
+  color: #c3c3c3;
+}
+
+.main a.redes-sociais {
+  text-decoration: none;
+}
+
+.main hr {
+    border: 1px solid #c3c3c3;
+}
+
+.social-img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.miniatura {
+  background-color: #191919;
+  width: 320px;
+  height: 320px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.blackbox {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  padding-top: 120px;
+  transition: 0.75s;
+}
+
+.blackbox:hover {
+  transition: 0.75s;
+  opacity: 0.85;
+}
+
+.blackbox-text {
+  text-align: center;
+}
+
+.blackbox-text h1 {
+  font-size: 18px;
+  color: #d11808;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.blackbox-text h2 {
+  text-transform: none;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.foto-trabalhos {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.back-link {
+  color: #d11808;
+}
+
+
+/* ANIMAÇÃO */
+
+@keyframes profile-capa {
+  0% {opacity: 0; transform: translateY(-50px)}
+  100% {opacity: 1; transform: translateY(0px)}
+}
+
+@keyframes title-capa {
+  0% {opacity: 0; transform: translateY(50px)}
+  100% {opacity: 1; transform: translateY(0px)}
+}
+
+@keyframes navbar {
+  0% {opacity: 0}
+  50% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes corpo {
+  0% {opacity: 0; transform: translateX(-50px)}
+  100% {opacity: 1; transform: translateX(0px)}
+}
+
+
+@media (max-width: 1000px) {
+
+  .navigation ul {
+    text-align: right;
+  }
+
+  .navigation li {
+    display: none;
+  }
+
+  .navigation li.menu-hamburguer {
+    display: inline-block;
+    font-size: 35px;
+  }
+
+  .me div {
+    display: block;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .me div.profile-pic {
+    width: 100%;
+  }
+
+  .me div.profile-pic img{
+    width: auto;
+    margin-top: 50px;
+    max-width: 80%;
+  }
+
+  .me div.profile-title {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .me div.profile-title h1 {
+    font-size: 80px;
+    line-height: 80px;
+    margin: 5px 20px;
+  }
+
+  .me div.profile-title h2 {
+    margin: 5px 20px;
+  }
+
+  .main {
+    padding: 10px 5% 40px 5%;
+  }
+
+  .main p {
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .breadcrumbs li {
+    font-size: 14px;
+  }
+
+  .main .cv-pic {
+    width: auto;
+    max-width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  .miniatura {
+    max-width: 100%;
+    background-size: auto 100%;
+  }
+
+  .blackbox {
+    opacity: 0.85;
+  }
+
+  .menujs {
+    height: auto;
+  }
+
+  .menujs ul {
+    height: auto;
+    text-align: center;
+    padding: 0 15%;
+  }
+
+  .menujs li {
+    display: block;
+    border-bottom: solid #d11808 2px;
+    width: 100%;
+    padding: 0;
+  }
+
+}
